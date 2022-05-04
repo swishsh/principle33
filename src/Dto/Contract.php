@@ -33,9 +33,6 @@ class Contract implements ContractInterface
 
     public function getMonthCost(float $usage) : float
     {
-        var_dump($this->getDefaultCost($usage));
-        var_dump($this->getExtraCost($usage) * $this->getPercentage($usage));
-
         return $this->getDefaultCost($usage) + $this->getExtraCost($usage) * $this->getPercentage($usage);
     }
 

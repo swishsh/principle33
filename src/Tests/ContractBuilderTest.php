@@ -16,5 +16,3 @@ class ContractBuilderTest extends TestCase
         $reponse = ContractBuilder::buildContact($data);
     }
 }
-
-5400
